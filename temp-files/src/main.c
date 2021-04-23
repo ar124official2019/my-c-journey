@@ -25,8 +25,9 @@ char *program_name = NULL;
 
 void print_usage(FILE *stream, int exit_status)
 {
-    fprintf(stream, "usage: %s options [input file ...]\n", program_name);
+    fprintf(stream, "usage: %s options\n", program_name);
     fprintf(stream,
+            "\nOptions:\n"
             "  -h, --help: Display this usage information\n"
             "  -i, --input: Iput file\n");
 
